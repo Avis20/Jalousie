@@ -1,0 +1,223 @@
+/* Базове настройки */
+
+a:hover, a:focus, a:visited, a:active {
+    text-decoration: none;
+}
+
+.section_header h2 {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    color: #666;
+}
+/* END */
+
+header {
+    color: #666;
+    margin-top: 10px;
+}
+header .description {
+    text-transform: uppercase;
+}
+header .description h4 {
+    font-family: 'PFDinTextCondProBold';
+    margin-top: 2px;
+}
+
+header .description h5 {
+    font-family: 'PFDinTextCondProLight';
+    font-size: 15px;
+}
+header .phone_number {
+    text-align: right;
+}
+header .phone_number a {
+    font-family: 'PFDinTextCondProBold';
+    color: #666;
+    display: inline-block;
+    font-size: 25px;
+}
+
+header .phone_number a:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background: url(../img/phone_icon.jpg) no-repeat center center;
+}
+header .phone_number h3 {
+    margin-top: 0px;
+}
+header .phone_number a:hover {
+    text-decoration: none;
+}
+
+header .phone_number p {
+    font-family: 'PFDinTextCondProLight';
+
+}
+#main h1 {
+    font-family: 'PFDinTextCondProBold';
+}
+/* Навигация */
+
+nav {
+    background-color: #fafdfa;
+}
+
+nav ul.list-inline {
+    margin: 0;
+}
+nav ul.list-inline a {
+    color: #666666;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    font-family: 'PFDinTextCondProLight';
+    -webkit-transition: all 0.1s 0.1s ease;
+    -o-transition: all 0.1s 0.1s ease;
+    transition: all 0.1s 0.1s ease;
+}
+nav ul.list-inline a:hover {
+    background-color: #67cc67;
+    color: #fff;
+}
+/* Главный экран */
+section#main {
+    background: url(../img/main_bg_1920_2.jpg) no-repeat center center;
+    background-size: cover;
+}
+section#main .main_header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+section#main .main_header h1 span{
+    background: #67cc67;
+    padding: 5px;
+}
+section#main h3 {
+    color: #fff;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+section#main h3 span {
+    color: #ff9933;
+}
+section#main .main_buttons {
+    margin-top: 7px; 
+    margin-bottom: 100px;
+}
+section#main .main_buttons button {
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+section#main .main_buttons button#call_master {
+    background: #ff9933;
+    padding: 17px 35px;
+}
+section#main .main_buttons button#call_master:hover {
+    background: #d67517;
+}
+section#main .main_buttons button#get_type {
+    background: transparent;
+    margin-left: 20px;
+    padding: 15px 32px;
+    border: solid 2px #ff9933;
+    color: #ff9933;
+}
+section#main .main_buttons button#get_type:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Вижы жалюзи */
+
+section#types {
+    text-transform: uppercase;
+    color: #666;
+    padding-top: 50px;
+}
+section#types .section_header {
+    margin-bottom: 50px;
+}
+
+section#types .card h4 {
+    font-family: 'PFDinTextCondProMedium';
+    margin-top: 25px;
+}
+section#types .card {
+    border: 3px solid transparent;
+    padding: 5px;
+    -webkit-transition: all 0.1s 0.1s ease;
+    -o-transition: all 0.1s 0.1s ease;
+    transition: all 0.1s 0.1s ease;
+}
+section#types .card:hover {
+    border: 3px solid #b2e5b2;
+    background-color: #fafafa;
+}
+section#types button.more {
+    border: none;
+    border: 2px solid #67cc67;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    padding: 10px 26px;
+}
+section#types button.more:hover {
+    color: #fff;
+    background: #67cc67;
+}
+section#types button.offer {
+    border: none;
+    border: 2px solid #67cc67;
+    background: #67cc67;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    padding: 10px 26px;
+    color: #fff;
+}
+section#types button.offer:hover {
+    color: #67cc67;
+    background: transparent;
+}
+/* END */
+/* Бесплатная консультация */
+
+section#help {
+    padding-top: 65px;
+}
+section#help h3 {
+    color: #ff9933;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+section#help p {
+    color: #666;
+    font-family: 'PFDinTextCondProLight';
+    font-size: 18px;
+}
+section#help img {
+    padding-top: 25px;
+}
+section#help #free_consult {
+    border: 2px solid #ff9933;
+    color: #ff9933;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    padding: 15px 35px;
+}
+section#help #free_consult:hover {
+    color: #fff;
+    background-color: #ff9933;
+}
+
+/*END*/

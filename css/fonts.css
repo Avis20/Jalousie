@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PFDinTextCondProMedium';
+    src: url('fonts/PFDinTextCondProMedium.eot');
+    src: url('fonts/PFDinTextCondProMedium.eot') format('embedded-opentype'),
+         url('fonts/PFDinTextCondProMedium.woff2') format('woff2'),
+         url('fonts/PFDinTextCondProMedium.woff') format('woff'),
+         url('fonts/PFDinTextCondProMedium.ttf') format('truetype'),
+         url('fonts/PFDinTextCondProMedium.svg#PFDinTextCondProMedium') format('svg');
+}
+@font-face {
+    font-family: 'PFDinTextCondProLight';
+    src: url('fonts/PFDinTextCondProLight.eot');
+    src: url('fonts/PFDinTextCondProLight.eot') format('embedded-opentype'),
+         url('fonts/PFDinTextCondProLight.woff2') format('woff2'),
+         url('fonts/PFDinTextCondProLight.woff') format('woff'),
+         url('fonts/PFDinTextCondProLight.ttf') format('truetype'),
+         url('fonts/PFDinTextCondProLight.svg#PFDinTextCondProLight') format('svg');
+}
+@font-face {
+    font-family: 'PFDinTextCondProBold';
+    src: url('fonts/PFDinTextCondProBold.eot');
+    src: url('fonts/PFDinTextCondProBold.eot') format('embedded-opentype'),
+         url('fonts/PFDinTextCondProBold.woff2') format('woff2'),
+         url('fonts/PFDinTextCondProBold.woff') format('woff'),
+         url('fonts/PFDinTextCondProBold.ttf') format('truetype'),
+         url('fonts/PFDinTextCondProBold.svg#PFDinTextCondProBold') format('svg');
+}
