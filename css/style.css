@@ -222,3 +222,27 @@ section#help #free_consult:hover {
 }
 
 /*END*/
+
+/* Акции */
+
+section#offer {
+    padding-top: 70px;
+}
+section#offer h4, h3 {
+    color: #ff9933;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+section#offer p {
+    color: #666;
+    font-family: 'PFDinTextCondProLight';
+    font-size: 22px;
+}
+section#offer input[name=name] {
+    background: url(../img/name_input.png) no-repeat center left 5px;
+}
+section#offer input[name=phone] {
+    background: url(../img/phone_input.png) no-repeat center left 5px;
+}
+
+/* END */
