@@ -239,10 +239,53 @@ section#offer p {
     font-size: 22px;
 }
 section#offer input[name=name] {
-    background: url(../img/name_input.png) no-repeat center left 5px;
-}
-section#offer input[name=phone] {
-    background: url(../img/phone_input.png) no-repeat center left 5px;
+    background: url(../img/name_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
 }
 
+section#offer input[name=name]:hover,
+section#offer input[name=name]:focus {
+    opacity: 1;
+}
+section#offer input[name=phone] {
+    background: url(../img/phone_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+section#offer input[name=phone]:hover,
+section#offer input[name=phone]:focus {
+    opacity: 1;
+}
+section#offer button[type=submit] {
+    background-color: #ff9933;
+    color: #fff;
+    border: 1px solid #ff9933;
+    padding: 15px 70px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+
+section#offer button[type=submit]:hover {
+    color: #ff9933;
+    background-color: #fff;
+}
+/* END */
+/* Отзывы */
+
+section#feedback .section_header{
+    margin-bottom: 50px;
+}
+section#feedback .item {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
 /* END */
