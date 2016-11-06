@@ -281,11 +281,128 @@ section#offer button[type=submit]:hover {
 /* END */
 /* Отзывы */
 
+section#feedback {
+    padding-bottom: 50px;
+}
 section#feedback .section_header{
     margin-bottom: 50px;
 }
 section#feedback .item {
     background-color: #f8f8f8;
     padding: 20px;
+    height: 350px;
+}
+section#feedback h5 {
+    color: #666;
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+section#feedback p {
+    font-family: 'PFDinTextCondProLight';
+    font-style: 17px;
+    margin-top: 20px;
+}
+section#feedback a {
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 18px;
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+ol.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    background-color: silver;
+    margin: 5px;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background-color: #ff9933;
+    margin: 5px
+}
+
+section#feedback audio {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* END */
+/* Футтер */
+footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #666;
+    color: #fff;
+}
+footer h2 {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+footer address {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProLight';
+    margin-left: 17px;
+}
+footer address p#address {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+footer address #address:before {
+    content: '';
+    background: url(../img/map_point.png) no-repeat center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+}
+footer address #name,
+footer .footer_phone #number {
+    font-size: 20px;
+}
+.footer_phone {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProLight';
+    margin-left: 17px;   
+}
+footer .footer_phone #footer_phone {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+footer .footer_phone #footer_phone:before {
+    content: '';
+    background: url(../img/phone_mark.png) no-repeat center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+}
+
+footer .social {
+    margin-top: 20;
+}
+footer .social_icon {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%; 
+}
+footer .social_icon:hover {
+    background-color: #fff;
+}
+footer button#question {
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 8px 40px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+footer button#question:hover {
+    background-color: #fff;
+    color: #666;
 }
 /* END */

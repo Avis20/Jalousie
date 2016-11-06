@@ -201,7 +201,7 @@
             </div>
             <div class="feedback_slider">    
             <!-- Карусель -->
-            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-interval="30000" data-ride="carousel">
               <!-- Индикаторы для карусели -->
               <ol class="carousel-indicators">
                 <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
@@ -229,15 +229,17 @@
                                   <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
                               </div>
                               <div class="col-md-10">
-                                  <h5>Марина Забелина</h5>
+                                  <h5>Рифат</h5>
                                   <a href="#">vk.com/id1234567890</a>
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
                           </div>
                       </div>
                   </div>
@@ -263,7 +265,9 @@
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
@@ -292,7 +296,9 @@
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
@@ -301,9 +307,7 @@
                   </div>
                 </div>
               </div>
-              
             </div>
-
             </div>
         </div>
     </section>
@@ -329,8 +333,8 @@
                         </address>
                     </div>
                     <div class="row">
-                        <div class="phone_footer">
-                            <p id="phone_footer">
+                        <div class="footer_phone">
+                            <p id="footer_phone">
                                 Телефон:
                             </p>
                             <p id="number">
@@ -338,10 +342,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="#"><img src="img/social-1.jpg" alt=""></a>
-                        <a href="#"><img src="img/social-2.jpg" alt=""></a>
-                        <button data-toggle="modal" href="#">Задать вопрос</button>
+                    <div class="row social">
+                        <div class="social_icon">
+                        <a href="#"><img src="img/vk.png" alt=""></a></div>
+                        <div class="social_icon"><a href="#"><img src="img/instagram.png" alt=""></a></div>
+                        <button id="question" data-toggle="modal" href="#">Задать вопрос</button>
                     </div>
                 </div>
             </div>
