@@ -93,8 +93,8 @@ section#main .main_header h1 {
     color: #fff;
     text-transform: uppercase;
     font-family: 'PFDinTextCondProBold';
-    margin-top: 100px;
-    margin-bottom: 110px;
+    margin-top: 130px;
+    margin-bottom: 120px;
 }
 section#main .main_header h1 span{
     background: #67cc67;
@@ -142,10 +142,10 @@ section#main .main_buttons button#get_type:hover {
 section#types {
     text-transform: uppercase;
     color: #666;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 section#types .section_header {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 section#types .card h4 {
@@ -223,10 +223,16 @@ section#help #free_consult:hover {
 
 /*END*/
 
+/* Наши работы */
+section#portfolio .section_header {
+    margin-bottom: 40px;
+}
+
+
 /* Акции */
 
 section#offer {
-    padding-top: 70px;
+    padding-top: 90px;
 }
 section#offer h4, h3 {
     color: #ff9933;
@@ -282,10 +288,10 @@ section#offer button[type=submit]:hover {
 /* Отзывы */
 
 section#feedback {
-    padding-bottom: 50px;
+    padding-bottom: 90px;
 }
 section#feedback .section_header{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 section#feedback .item {
     background-color: #f8f8f8;
@@ -309,7 +315,7 @@ section#feedback a {
     font-size: 18px;
 }
 .carousel-indicators {
-    bottom: -40px;
+    bottom: -70px;
 }
 ol.carousel-indicators li {
     width: 15px;
@@ -404,5 +410,40 @@ footer button#question {
 footer button#question:hover {
     background-color: #fff;
     color: #666;
+}
+footer .details_row {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+footer .details h5 {
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 20px;
+}
+footer .details p {
+    font-family: 'PFDinTextCondProLight';
+    font-size: 17px;
+    text-transform: uppercase;
+}
+footer .policy {
+    text-align: center;
+}
+footer .policy a {
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;
+}
+footer .policy p {
+    margin-top: 10px;
+}
+footer .orlov {
+    text-align: right;
+    font-size: 17px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+footer .orlov a {
+    color: #ccc;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;   
 }
 /* END */
