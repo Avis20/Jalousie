@@ -66,7 +66,7 @@
                 <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
             </div>
             <div class="row main_buttons">
-                <button data-toggle="modal" id="call_master" href="#">Вызвать замерщика</button>
+                <button data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
                 <a href="#types"><button id="get_type">Выбрать жалюзи</button></a>
             </div>
         </div>
@@ -370,6 +370,37 @@
         </div>
     </footer>
 
+    <!-- Окно вызова замерщика -->
+    <div id="call_master_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="header_modal">
+                <h4>Для вызова замерщика <br>оставте свои данные</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-xs-12">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <button type="submit">Вызвать замерщика</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/fotorama.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -384,6 +415,10 @@
                 $("html").niceScroll({curcorcolor:"#000"});
             }
         );
+        /* Вызов модального окна */
+        $(document).on('click', '#call_master_modal', function(e){
+          $("#myModalBox").modal('show');
+        });
     </script>
 </body>
 </html>
