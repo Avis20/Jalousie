@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hi</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fotorama.css">
     <title>Производство, продажа и установка в Казани</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -140,18 +140,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="slider">
-                    <div class="fotorama">
-                        <img src="img/carusel/1.png" alt="">
-                        <img src="img/carusel/2.png" alt="">
-                        <img src="img/carusel/3.png" alt="">
-                        <img src="img/carusel/4.png" alt="">
-                        <img src="img/carusel/5.png" alt="">
-                        <img src="img/carusel/6.png" alt="">
-                        <img src="img/carusel/7.png" alt="">
-                        <img src="img/carusel/8.png" alt="">
-                        <img src="img/carusel/9.png" alt="">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="slider">
+                    <div class="fotorama" 
+                    data-nav="thumbs"
+                    data-loop="true"
+                    data-autoplay="true">
+                        <img src="img/portfolio/1.jpg" alt="">
+                        <img src="img/portfolio/2.jpg" alt="">
+                        <img src="img/portfolio/3.jpg" alt="">
+                        <img src="img/portfolio/4.jpg" alt="">
+                        <img src="img/portfolio/5.jpg" alt="">
+                        <img src="img/portfolio/6.jpg" alt="">
+                        <img src="img/portfolio/7.jpg" alt="">
+                        <img src="img/portfolio/8.jpg" alt="">
+                        <img src="img/portfolio/9.jpg" alt="">
+                        <img src="img/portfolio/10.jpg" alt="">
+                        <img src="img/portfolio/11.jpg" alt="">
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -165,15 +172,15 @@
                 </div>
                 <div class="col-md-9">
                     <h4>Акция</h4><br>
-                    <h5>Закажите установку жалюзи до 29.06.2016</h5><br>
+                    <h3>Закажите установку жалюзи до 29.06.2016</h3>
                     <p>И получите в подарок москитную сетку для окна</p>
                     <div class="row">
                         <form action="#">
                         <div class="col-md-4">
-                            <input type="text" required placeholder="Имя..." class="form-control form_input">
+                            <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" required placeholder="Телефон" class="form-control form_input">
+                            <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
                         </div>
                         <div class="col-md-4">
                             <button type="submit">Заказать жалюзи</button>
@@ -194,7 +201,7 @@
             </div>
             <div class="feedback_slider">    
             <!-- Карусель -->
-            <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-interval="30000" data-ride="carousel">
               <!-- Индикаторы для карусели -->
               <ol class="carousel-indicators">
                 <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
@@ -227,10 +234,12 @@
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
                           </div>
                       </div>
                   </div>
@@ -256,7 +265,9 @@
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
@@ -285,7 +296,9 @@
                               </div>
                           </div>
                           <div class="row">
-                              <audio src="audio/1.mp3"></audio>
+                              <audio controls>
+                                <source src="audio/feedback_1.mp3" type="">
+                              </audio>
                           </div>
                           <div class="row">
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorum quisquam doloribus officia, autem exercitationem. Numquam facilis obcaecati natus hic deserunt mollitia nulla sequi, et perferendis, deleniti magni sapiente nihil.</p>
@@ -294,17 +307,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Навигация для карусели -->
-              <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-              <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-              <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
             </div>
-
             </div>
         </div>
     </section>
@@ -312,9 +315,9 @@
     <footer id="contacts">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5 col-md-offset-1">
                     <div class="map">
-                        
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=3f6ntMB3pHLFuMly_g9RUHQFwdhsLNTm&amp;width=100%&amp;height=330&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -330,8 +333,8 @@
                         </address>
                     </div>
                     <div class="row">
-                        <div class="phone_footer">
-                            <p id="phone_footer">
+                        <div class="footer_phone">
+                            <p id="footer_phone">
                                 Телефон:
                             </p>
                             <p id="number">
@@ -339,15 +342,16 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="#"><img src="img/social-1.jpg" alt=""></a>
-                        <a href="#"><img src="img/social-2.jpg" alt=""></a>
-                        <button data-toggle="modal" href="#">Задать вопрос</button>
+                    <div class="row social">
+                        <div class="social_icon">
+                        <a href="#"><img src="img/vk.png" alt=""></a></div>
+                        <div class="social_icon"><a href="#"><img src="img/instagram.png" alt=""></a></div>
+                        <button id="question" data-toggle="modal" href="#">Задать вопрос</button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row details_row">
+                <div class="col-md-4 details">
                     <h5>ООО "Рога и копыта"</h5>
                     <p>
                         ОГРН 123456789123456<br>
@@ -359,6 +363,7 @@
                     <p>Казань, 2013-2016</p>
                 </div>
                 <div class="col-md-4 orlov">
+                  <h4>Сайт разработан:</h4>
                     <a href="https://vk.com/orlov199595">orlov.ART</a>
                 </div>
             </div>
