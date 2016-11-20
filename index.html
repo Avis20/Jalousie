@@ -66,7 +66,7 @@
                 <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
             </div>
             <div class="row main_buttons">
-                <button data-toggle="modal" id="call_master" href="#">Вызвать замерщика</button>
+                <button data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
                 <a href="#types"><button id="get_type">Выбрать жалюзи</button></a>
             </div>
         </div>
@@ -84,32 +84,32 @@
                     <div class="card">
                         <img src="img/types-1.jpg" alt="Горизонтальные жалюзи" class="img-responsive center-block">
                         <h4>Горизонтальные жалюзи</h4>
-                        <button class="more" data-toggle="modal" href="#">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#">Заказать</button>
+                        <button class="more" data-toggle="modal" href="#more_hirizontal">Подробнее</button>
+                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-2.jpg" alt="Вертикальные жалюзи" class="img-responsive center-block">
                         <h4>Вертикальные жалюзи</h4>
-                        <button class="more" data-toggle="modal" href="#">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#">Заказать</button>
+                        <button class="more" data-toggle="modal" href="#more_vertical">Подробнее</button>
+                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="img/types-3.jpg" alt="Рулоновые жалюзи" class="img-responsive center-block">
-                        <h4>Рулоновые жалюзи</h4>
-                        <button class="more" data-toggle="modal" href="#">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#">Заказать</button>
+                        <img src="img/types-3.jpg" alt="Рулонновые жалюзи" class="img-responsive center-block">
+                        <h4>Рулонновые жалюзи</h4>
+                        <button class="more" data-toggle="modal" href="#more_roll">Подробнее</button>
+                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-4.jpg" alt="Жалюзи плиссе" class="img-responsive center-block">
                         <h4>Жалюзи плиссе</h4>
-                        <button class="more" data-toggle="modal" href="#">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#">Заказать</button>
+                        <button class="more" data-toggle="modal" href="#more_plisse">Подробнее</button>
+                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                     <h3>Не знаете какие жалюзи выбрать?</h3><br>
                     <p>Оставте заявку на консультацию и наш специалист подробно ответит <br> на все Ваши вопросы. Это бесплатно.</p>
                     <br>
-                    <button id="free_consult" data-toggle="modal" href="#">Бесплатная консультация</button>
+                    <button id="free_consult" data-toggle="modal" href="#get_question">Бесплатная консультация</button>
                 </div>
                 <div class="col-md-2 col-md-offset-1">
                     <img src="img/help.jpg" alt="Бесплатная консультация" class="img-responsive center-block">
@@ -347,7 +347,7 @@
                         <div class="social_icon">
                         <a href="#"><img src="img/vk.png" alt=""></a></div>
                         <div class="social_icon"><a href="#"><img src="img/instagram.png" alt=""></a></div>
-                        <button id="question" data-toggle="modal" href="#">Задать вопрос</button>
+                        <button id="question" data-toggle="modal" href="#get_question">Задать вопрос</button>
                     </div>
                 </div>
             </div>
@@ -371,6 +371,303 @@
         </div>
     </footer>
 
+    <!-- Модальное окно вызова замерщика -->
+    <div id="call_master_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="header_modal">
+                <h4>Для вызова замерщика <br>оставте свои данные</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-xs-12">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <button type="submit">Вызвать замерщика</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно (Горизонтальные жалюзи) -->
+    <div id="more_hirizontal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="header_modal_info">
+                <h4>Горизонтальные жалюзи</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="fotorama" data-width="100%"
+                    data-loop="true"
+                    data-autoplay="true">
+                  <img src="img/types/horizontal/1.jpg" alt="">
+                  <img src="img/types/horizontal/2.jpg" alt="">
+                  <img src="img/types/horizontal/3.jpg" alt="">
+                  <img src="img/types/horizontal/4.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <p>Являются самым популярным видом жалюзи из-за своей <br>универсальности и простоты конструкции.</p>
+                <p>В отличии от штор, позволяют плавно регулировать пото света и помещении.</p>
+                <p>Одновременно с универсальностью дизайна, горизонтальные жалюзи - это дешевая альтернатива традиционным шторам.</p>
+                <div class="price">
+                  <h4><span>от</span> 999 рублей</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-md-4">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <button type="submit">Заказать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно (Вертикальные жалюзи) -->
+    <div id="more_vertical" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="header_modal_info">
+                <h4>Вертикальные жалюзи</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="fotorama" data-width="100%"
+                    data-loop="true"
+                    data-autoplay="true">
+                  <img src="img/types/vertical/1.jpg" alt="">
+                  <img src="img/types/vertical/2.jpg" alt="">
+                  <img src="img/types/vertical/3.jpg" alt="">
+                  <img src="img/types/vertical/4.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <p>Ценятся благодаря оригинальному дизайну и лёгкости в управлении. Вертикальные жалюзи позволяют без труда регулировать освещённость помещения.</p>
+                <p>Вертикальные жалюзи выставляют более высокие требования к надёжности механизма — ведь вся нагрузка приходится на подвижные элементы. Поэтому особенно важно не ошибиться в выборе производителя и поставщика.</p>
+                <div class="price">
+                  <h4><span>от</span> 650 рублей</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-md-4">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <button type="submit">Заказать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно (Рулонные жалюзи) -->
+    <div id="more_roll" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="header_modal_info">
+                <h4>Рулонные жалюзи</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="fotorama" data-width="100%"
+                    data-loop="true"
+                    data-autoplay="true">
+                  <img src="img/types/vertical/1.jpg" alt="">
+                  <img src="img/types/vertical/2.jpg" alt="">
+                  <img src="img/types/vertical/3.jpg" alt="">
+                  <img src="img/types/vertical/4.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <p>Рулонные шторы или рулонные жалюзи — компактные, долговечные и простые в обращении, рассчитанные как для жилых, так и для офисных помещений. Изготавливаются из плотной ткани различных расцветок и вариантов оформления.</p>
+                <p>Крепятся на верхней части оконной рамы. В закрытом положении — скатываются в компактный плотный рулон. Для открывания и закрывания рулонных жалюзи применяется ручной или электрический привод.</p>
+                <div class="price">
+                  <h4><span>от</span> 2 220 рублей</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-md-4">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <button type="submit">Заказать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно (Жалюзи плиссе) -->
+    <div id="more_plisse" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog big_modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="header_modal_info">
+                <h4>Жалюзи плиссе</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="fotorama" data-width="100%"
+                    data-loop="true"
+                    data-autoplay="true">
+                  <img src="img/types/vertical/1.jpg" alt="">
+                  <img src="img/types/vertical/2.jpg" alt="">
+                  <img src="img/types/vertical/3.jpg" alt="">
+                  <img src="img/types/vertical/4.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-7">
+                <p>Шторы плиссе или «гармошки» это новое модное и универсальное решение для оформления окон. Уникальность этого вида штор заключается в возможности использовать их для окон любых форм и конструкций, в том числе и для арочных, круглых и наклонных окон.</p>
+                <p>Огромный ассортимент тканей и фактур позволяет использование штор плиссе в любых стилевых решениях ваших интерьеров.</p>
+                <div class="price">
+                  <h4><span>от</span> 11 788 рублей</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-md-4">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-md-4">
+                  <button type="submit">Заказать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно заказа жалюзи -->
+    <div id="get_jalousie" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="header_modal">
+                <h4>Для заказа жалюзи <br>оставте свои данные</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-xs-12">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <button type="submit">Заказать жалюзи</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно бесплатная консультация -->
+    <div id="get_question" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="header_modal">
+                <h4>Задайте вопрос<br>указав свои данные</h4>
+              </div>
+            </div>
+            <div class="row">
+              <form action="#">
+                <div class="col-xs-12">
+                  <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" name="phone" required placeholder="Телефон" class="form-control form_input">
+                </div>
+                <div class="col-xs-12">
+                  <textarea name="question" required cols="30" rows="5" placeholder="Ващ вопрос..." class="form-control form_input"></textarea>
+                </div>
+                <div class="col-xs-12">
+                  <button type="submit">Задать вопрос</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/fotorama.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -385,6 +682,10 @@
                 $("html").niceScroll({curcorcolor:"#000"});
             }
         );
+        /* Вызов модального окна */
+        $(document).on('click', '#call_master_modal', function(e){
+          $("#myModalBox").modal('show');
+        });
     </script>
 </body>
 </html>

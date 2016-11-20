@@ -3,14 +3,17 @@
 a:hover, a:focus, a:visited, a:active {
     text-decoration: none;
 }
-
 .section_header h2 {
     text-transform: uppercase;
     font-family: 'PFDinTextCondProBold';
     color: #666;
 }
-/* END */
+button:focus {
+    outline: none;
+}
 
+/* END */
+/* Шапка */
 header {
     color: #666;
     margin-top: 10px;
@@ -447,3 +450,129 @@ footer .orlov a {
     border-bottom: 1px dashed #fff;   
 }
 /* END */
+/* Всплывающие окна */
+.modal-dialog {
+    margin-top: 10%;
+}
+.big_modal {
+    width: 60%;
+}
+.modal-content {
+    border-radius: 0;
+}
+.big_modal .modal-content {
+    padding: 15px;
+}
+.modal-dialog .header_modal h4 {
+    text-transform: uppercase;
+    color: #666;
+    font-family: 'PFDinTextCondProBold';
+}
+.modal-dialog .modal-header {
+    border-bottom: none;
+    margin-top: -50px;
+}
+.big_modal .modal-header {
+    margin-top: -70px;
+}
+.modal-dialog .modal-header button {
+    text-shadow: none;
+    opacity: 0.9;
+    color: #fff;
+    margin-right: -30px;
+}
+.modal-dialog .modal-body input[name=name] {
+    background: url(../img/name_input.png) no-repeat center left 10px;
+    margin-top: 15px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+
+.modal-dialog .modal-body input[name=name]:hover,
+.modal-dialog .modal-body input[name=name]:focus {
+    opacity: 1;
+}
+.modal-dialog .modal-body input[name=phone] {
+    margin-top: 15px;
+    background: url(../img/phone_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+.modal-dialog .modal-body input[name=phone]:hover,
+.modal-dialog .modal-body input[name=phone]:focus {
+    opacity: 1;
+}
+.modal-dialog .modal-body button[type=submit] {
+    margin: 0;
+    margin-top: 15px;
+    background-color: #ff9933;
+    color: #fff;
+    border: 1px solid #ff9933;
+    padding: 15px 60px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+.modal-dialog .modal-body button[type=submit]:hover {
+    color: #ff9933;
+    background-color: #fff;
+}
+.big_modal .modal-body button[type=submit] {
+    padding: 15px 40%;
+}
+.modal-body textarea[name=question] {
+    margin-top: 15px;
+    border-radius: 0;
+    padding: 20px;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+.modal-dialog .modal-body textarea:hover,
+.modal-dialog .modal-body textarea:focus {
+    opacity: 1;
+}
+
+.modal-body .header_modal_info h4 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    color: #666;
+}
+.modal-body p {
+    font-family: 'PFDinTextCondProLight';
+    font-size: 18px;
+}
+
+.modal-body .fotorama .fotorama__dot {
+    width: 13px;
+    height: 13px;
+    background-color: silver;
+    margin: 5px;
+    border: none;
+}
+.modal-body .fotorama .fotorama__active .fotorama__dot {
+    width: 13px;
+    height: 13px;
+    background-color: #67cc67;
+    margin: 5px;
+    border: none;   
+}
+
+.modal-body .price {
+    margin-top: 40px;
+    color: #ff9933;
+}
+.modal-body .price h4 {
+    font-family: 'PFDinTextCondProBold';
+    font-size: 25px;
+}
+.modal-body .price span {
+    font-family: 'PFDinTextCondProLight';
+}
