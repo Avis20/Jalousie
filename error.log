@@ -1,0 +1,67 @@
+[Sat Nov 19 14:29:19.043845 2016] [core:error] [pid 22582:tid 139662186239744] (13)Permission denied: [client ::1:37336] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:31:33.511292 2016] [core:error] [pid 22977:tid 140506799019776] (13)Permission denied: [client ::1:37392] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:31:34.157696 2016] [core:error] [pid 22977:tid 140506790627072] (13)Permission denied: [client ::1:37392] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:31:34.454339 2016] [core:error] [pid 22977:tid 140506782234368] (13)Permission denied: [client ::1:37392] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:33:49.841473 2016] [core:error] [pid 23531:tid 140103007549184] (13)Permission denied: [client 127.0.0.1:59590] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:33:50.226980 2016] [core:error] [pid 23531:tid 140102999156480] (13)Permission denied: [client 127.0.0.1:59590] AH00035: access to /favicon.ico denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path, referer: http://127.0.0.1/
+[Sat Nov 19 14:33:57.212350 2016] [core:error] [pid 23531:tid 140103194597120] (13)Permission denied: [client 127.0.0.1:47902] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:33:57.621405 2016] [core:error] [pid 23531:tid 140102990763776] (13)Permission denied: [client 127.0.0.1:47902] AH00035: access to /favicon.ico denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path, referer: http://127.0.1.1/
+[Sat Nov 19 14:37:43.437799 2016] [core:error] [pid 24269:tid 140363843774208] (13)Permission denied: [client ::1:37480] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:42:55.244998 2016] [core:error] [pid 24575:tid 140662192207616] (13)Permission denied: [client ::1:37554] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:10.978256 2016] [core:error] [pid 24978:tid 140662292698880] (13)Permission denied: [client ::1:37574] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:50.394604 2016] [core:error] [pid 24978:tid 140662284306176] (13)Permission denied: [client ::1:37578] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:56.947990 2016] [core:error] [pid 25055:tid 140662167029504] (13)Permission denied: [client ::1:37582] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:57.572429 2016] [core:error] [pid 25055:tid 140662158636800] (13)Permission denied: [client ::1:37582] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:57.846588 2016] [core:error] [pid 25055:tid 140662150244096] (13)Permission denied: [client ::1:37582] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 14:46:57.918975 2016] [core:error] [pid 25055:tid 140662141851392] (13)Permission denied: [client ::1:37582] AH00035: access to / denied (filesystem path '/home/avis/develop/Sites') because search permissions are missing on a component of the path
+[Sat Nov 19 16:05:45.735581 2016] [cgid:error] [pid 32209:tid 140396222994176] [client ::1:39780] End of script output before headers: test.pl
+[Sat Nov 19 16:22:00.130832 2016] [cgid:error] [pid 32209:tid 140396333684480] [client ::1:40198] End of script output before headers: send.pl
+[Sat Nov 19 16:22:18.358996 2016] [cgid:error] [pid 32209:tid 140396147459840] [client ::1:40216] End of script output before headers: send.pl
+[Sat Nov 19 16:22:19.145050 2016] [cgid:error] [pid 32209:tid 140396130674432] [client ::1:40218] End of script output before headers: send.pl
+[Sat Nov 19 16:22:19.425803 2016] [cgid:error] [pid 32208:tid 140396206208768] [client ::1:40220] End of script output before headers: send.pl
+[Sat Nov 19 16:22:25.762708 2016] [cgid:error] [pid 32209:tid 140396122281728] [client ::1:40222] End of script output before headers: send.pl
+[Sat Nov 19 16:22:26.490518 2016] [cgid:error] [pid 32209:tid 140396113889024] [client ::1:40224] End of script output before headers: send.pl
+[Sat Nov 19 16:22:26.739074 2016] [cgid:error] [pid 32209:tid 140396097103616] [client ::1:40226] End of script output before headers: send.pl
+[Sat Nov 19 16:22:46.804358 2016] [cgid:error] [pid 32208:tid 140396239779584] [client ::1:40232] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 16:22:57.699635 2016] [cgid:error] [pid 32208:tid 140396088710912] [client ::1:40246] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 16:23:09.409275 2016] [cgid:error] [pid 32208:tid 140396071925504] [client ::1:40294] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 16:23:16.540601 2016] [cgid:error] [pid 32208:tid 140396063532800] [client ::1:40296] End of script output before headers: send.pl
+[Sat Nov 19 16:23:19.601186 2016] [cgid:error] [pid 32209:tid 140396164245248] [client ::1:40330] End of script output before headers: send.pl
+[Sat Nov 19 16:23:42.018839 2016] [cgid:error] [pid 32209:tid 140396130674432] [client ::1:40344] End of script output before headers: send.pl
+[Sat Nov 19 16:23:42.691598 2016] [cgid:error] [pid 32208:tid 140396189423360] [client ::1:40346] End of script output before headers: send.pl
+[Sat Nov 19 16:23:43.006721 2016] [cgid:error] [pid 32208:tid 140396181030656] [client ::1:40348] End of script output before headers: send.pl
+[Sat Nov 19 16:23:43.168294 2016] [cgid:error] [pid 32209:tid 140396122281728] [client ::1:40350] End of script output before headers: send.pl
+[Sat Nov 19 16:23:43.417502 2016] [cgid:error] [pid 32208:tid 140396197816064] [client ::1:40352] End of script output before headers: send.pl
+[Sat Nov 19 16:23:43.516192 2016] [cgid:error] [pid 32209:tid 140396113889024] [client ::1:40354] End of script output before headers: send.pl
+[Sat Nov 19 16:24:08.073379 2016] [cgid:error] [pid 1283:tid 140116459599616] [client ::1:40358] End of script output before headers: send.pl
+[Sat Nov 19 16:24:08.715537 2016] [cgid:error] [pid 1283:tid 140116451206912] [client ::1:40360] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.008432 2016] [cgid:error] [pid 1283:tid 140116442814208] [client ::1:40362] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.167802 2016] [cgid:error] [pid 1283:tid 140116434421504] [client ::1:40364] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.322654 2016] [cgid:error] [pid 1282:tid 140116459599616] [client ::1:40366] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.346685 2016] [cgid:error] [pid 1283:tid 140116426028800] [client ::1:40368] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.634632 2016] [cgid:error] [pid 1283:tid 140116417636096] [client ::1:40370] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.654917 2016] [cgid:error] [pid 1282:tid 140116451206912] [client ::1:40372] End of script output before headers: send.pl
+[Sat Nov 19 16:24:09.923805 2016] [cgid:error] [pid 1283:tid 140116409243392] [client ::1:40374] End of script output before headers: send.pl
+[Sat Nov 19 16:24:51.868913 2016] [cgid:error] [pid 1283:tid 140116311922432] [client ::1:40382] End of script output before headers: send.pl
+[Sat Nov 19 16:34:00.098777 2016] [cgid:error] [pid 1701:tid 140396533327616] [client ::1:40634] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 16:37:58.304421 2016] [cgid:error] [pid 1702:tid 140396491364096] [client ::1:40692] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 17:08:46.590623 2016] [cgid:error] [pid 1464:tid 140122460727040] [client ::1:47322] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 17:10:34.361069 2016] [cgid:error] [pid 1464:tid 140122435548928] [client ::1:47380] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 17:11:11.221278 2016] [cgid:error] [pid 1464:tid 140122410370816] [client ::1:47414] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 17:12:46.938616 2016] [cgid:error] [pid 1463:tid 140122494297856] [client ::1:47448] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 17:23:29.004743 2016] [cgid:error] [pid 1464:tid 140122662655744] [client ::1:47620] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:06:56.054206 2016] [cgid:error] [pid 2575:tid 140651421218560] [client ::1:34572] End of script output before headers: send.pl
+[Sat Nov 19 20:07:06.884889 2016] [cgid:error] [pid 2575:tid 140651337291520] [client ::1:34586] End of script output before headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:08:09.527032 2016] [cgid:error] [pid 2575:tid 140651312113408] [client ::1:34622] Premature end of script headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:08:22.259237 2016] [cgid:error] [pid 2575:tid 140651270149888] [client ::1:34658] Premature end of script headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:08:40.444868 2016] [cgid:error] [pid 2575:tid 140651379255040] [client ::1:34674] Premature end of script headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:08:58.797863 2016] [cgid:error] [pid 2574:tid 140651320506112] [client ::1:34690] Premature end of script headers: send.pl, referer: http://localhost/
+[Sat Nov 19 20:09:23.597071 2016] [cgid:error] [pid 2575:tid 140651421218560] [client ::1:34704] End of script output before headers: send.pl
+[Sat Nov 19 20:09:53.361849 2016] [cgid:error] [pid 9290:tid 139890557638400] [client ::1:34712] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.151471 2016] [cgid:error] [pid 9290:tid 139890549245696] [client ::1:34714] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.450229 2016] [cgid:error] [pid 9291:tid 139890786162432] [client ::1:34716] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.523764 2016] [cgid:error] [pid 9290:tid 139890540852992] [client ::1:34718] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.774112 2016] [cgid:error] [pid 9291:tid 139890708707072] [client ::1:34720] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.879709 2016] [cgid:error] [pid 9291:tid 139890691921664] [client ::1:34722] End of script output before headers: send.pl
+[Sat Nov 19 20:09:54.903501 2016] [cgid:error] [pid 9291:tid 139890700314368] [client ::1:34724] End of script output before headers: send.pl
+[Sat Nov 19 20:10:35.531642 2016] [cgid:error] [pid 9290:tid 139890532460288] [client ::1:34732] End of script output before headers: send.pl

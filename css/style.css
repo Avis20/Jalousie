@@ -3,14 +3,17 @@
 a:hover, a:focus, a:visited, a:active {
     text-decoration: none;
 }
-
 .section_header h2 {
     text-transform: uppercase;
     font-family: 'PFDinTextCondProBold';
     color: #666;
 }
-/* END */
+button:focus {
+    outline: none;
+}
 
+/* END */
+/* Шапка */
 header {
     color: #666;
     margin-top: 10px;
@@ -93,8 +96,8 @@ section#main .main_header h1 {
     color: #fff;
     text-transform: uppercase;
     font-family: 'PFDinTextCondProBold';
-    margin-top: 100px;
-    margin-bottom: 110px;
+    margin-top: 130px;
+    margin-bottom: 120px;
 }
 section#main .main_header h1 span{
     background: #67cc67;
@@ -142,10 +145,10 @@ section#main .main_buttons button#get_type:hover {
 section#types {
     text-transform: uppercase;
     color: #666;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 section#types .section_header {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 section#types .card h4 {
@@ -193,6 +196,7 @@ section#types button.offer:hover {
 
 section#help {
     padding-top: 65px;
+    padding-bottom: 50px;
 }
 section#help h3 {
     color: #ff9933;
@@ -221,3 +225,354 @@ section#help #free_consult:hover {
 }
 
 /*END*/
+
+/* Наши работы */
+section#portfolio .section_header {
+    margin-bottom: 40px;
+}
+
+
+/* Акции */
+
+section#offer {
+    padding-top: 90px;
+}
+section#offer h4, h3 {
+    color: #ff9933;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+section#offer p {
+    color: #666;
+    font-family: 'PFDinTextCondProLight';
+    font-size: 22px;
+}
+section#offer input[name=name] {
+    background: url(../img/name_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+
+section#offer input[name=name]:hover,
+section#offer input[name=name]:focus {
+    opacity: 1;
+}
+section#offer input[name=phone] {
+    background: url(../img/phone_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+section#offer input[name=phone]:hover,
+section#offer input[name=phone]:focus {
+    opacity: 1;
+}
+section#offer button[type=submit] {
+    background-color: #ff9933;
+    color: #fff;
+    border: 1px solid #ff9933;
+    padding: 15px 70px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+
+section#offer button[type=submit]:hover {
+    color: #ff9933;
+    background-color: #fff;
+}
+/* END */
+/* Отзывы */
+
+section#feedback {
+    padding-bottom: 90px;
+}
+section#feedback .section_header{
+    margin-bottom: 35px;
+}
+section#feedback .item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    height: 350px;
+}
+section#feedback h5 {
+    color: #666;
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+section#feedback p {
+    font-family: 'PFDinTextCondProLight';
+    font-style: 17px;
+    margin-top: 20px;
+}
+section#feedback a {
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 18px;
+}
+.carousel-indicators {
+    bottom: -70px;
+}
+ol.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    background-color: silver;
+    margin: 5px;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    background-color: #ff9933;
+    margin: 5px
+}
+
+section#feedback audio {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* END */
+/* Футтер */
+footer {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #666;
+    color: #fff;
+}
+footer h2 {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+footer address {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProLight';
+    margin-left: 17px;
+}
+footer address p#address {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+footer address #address:before {
+    content: '';
+    background: url(../img/map_point.png) no-repeat center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+}
+footer address #name,
+footer .footer_phone #number {
+    font-size: 20px;
+}
+.footer_phone {
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProLight';
+    margin-left: 17px;   
+}
+footer .footer_phone #footer_phone {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+footer .footer_phone #footer_phone:before {
+    content: '';
+    background: url(../img/phone_mark.png) no-repeat center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+}
+
+footer .social {
+    margin-top: 20;
+}
+footer .social_icon {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%; 
+}
+footer .social_icon:hover {
+    background-color: #fff;
+}
+footer button#question {
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 8px 40px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+}
+footer button#question:hover {
+    background-color: #fff;
+    color: #666;
+}
+footer .details_row {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+footer .details h5 {
+    font-family: 'PFDinTextCondProMedium';
+    font-size: 20px;
+}
+footer .details p {
+    font-family: 'PFDinTextCondProLight';
+    font-size: 17px;
+    text-transform: uppercase;
+}
+footer .policy {
+    text-align: center;
+}
+footer .policy a {
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;
+}
+footer .policy p {
+    margin-top: 10px;
+}
+footer .orlov {
+    text-align: right;
+    font-size: 17px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+footer .orlov a {
+    color: #ccc;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #fff;   
+}
+/* END */
+/* Всплывающие окна */
+.modal-dialog {
+    margin-top: 10%;
+}
+.big_modal {
+    width: 60%;
+}
+.modal-content {
+    border-radius: 0;
+}
+.big_modal .modal-content {
+    padding: 15px;
+}
+.modal-dialog .header_modal h4 {
+    text-transform: uppercase;
+    color: #666;
+    font-family: 'PFDinTextCondProBold';
+}
+.modal-dialog .modal-header {
+    border-bottom: none;
+    margin-top: -50px;
+}
+.big_modal .modal-header {
+    margin-top: -70px;
+}
+.modal-dialog .modal-header button {
+    text-shadow: none;
+    opacity: 0.9;
+    color: #fff;
+    margin-right: -30px;
+}
+.modal-dialog .modal-body input[name=name] {
+    background: url(../img/name_input.png) no-repeat center left 10px;
+    margin-top: 15px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+
+.modal-dialog .modal-body input[name=name]:hover,
+.modal-dialog .modal-body input[name=name]:focus {
+    opacity: 1;
+}
+.modal-dialog .modal-body input[name=phone] {
+    margin-top: 15px;
+    background: url(../img/phone_input.png) no-repeat center left 10px;
+    padding: 25px;
+    padding-left: 35px;
+    border-radius: 0;
+    border: solid 1px #ccc;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+.modal-dialog .modal-body input[name=phone]:hover,
+.modal-dialog .modal-body input[name=phone]:focus {
+    opacity: 1;
+}
+.modal-dialog .modal-body button[type=submit] {
+    margin: 0;
+    margin-top: 15px;
+    background-color: #ff9933;
+    color: #fff;
+    border: 1px solid #ff9933;
+    padding: 15px 60px;
+    font-family: 'PFDinTextCondProBold';
+    text-transform: uppercase;
+}
+.modal-dialog .modal-body button[type=submit]:hover {
+    color: #ff9933;
+    background-color: #fff;
+}
+.big_modal .modal-body button[type=submit] {
+    padding: 15px 40%;
+}
+.modal-body textarea[name=question] {
+    margin-top: 15px;
+    border-radius: 0;
+    padding: 20px;
+    font-family: 'PFDinTextCondProLight';
+    opacity: 0.6;
+}
+.modal-dialog .modal-body textarea:hover,
+.modal-dialog .modal-body textarea:focus {
+    opacity: 1;
+}
+
+.modal-body .header_modal_info h4 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: 'PFDinTextCondProBold';
+    color: #666;
+}
+.modal-body p {
+    font-family: 'PFDinTextCondProLight';
+    font-size: 18px;
+}
+
+.modal-body .fotorama .fotorama__dot {
+    width: 13px;
+    height: 13px;
+    background-color: silver;
+    margin: 5px;
+    border: none;
+}
+.modal-body .fotorama .fotorama__active .fotorama__dot {
+    width: 13px;
+    height: 13px;
+    background-color: #67cc67;
+    margin: 5px;
+    border: none;   
+}
+
+.modal-body .price {
+    margin-top: 40px;
+    color: #ff9933;
+}
+.modal-body .price h4 {
+    font-family: 'PFDinTextCondProBold';
+    font-size: 25px;
+}
+.modal-body .price span {
+    font-family: 'PFDinTextCondProLight';
+}
