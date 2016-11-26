@@ -2,25 +2,35 @@
 use uni::perl qw/:dumper/;
 
 use Net::SMTP::SSL;
+use My::CGI;
 
-print "Content-type:text/html\n\n";
+my $cgi = My::CGI->new();
+
+print "Content-type:text/html; charset:utf8\n\n";
 print "<body>";
 print "<html>";
-
+foreach (keys $cgi->{data}){
+    print "$_ -> $cgi->{data}->{$_} <br />";
+}
+print "</body>";
+print "</html>";
+=head TODO send post data
 # Читаем post данные и делаем из строки хеш
 my $from_data;
 read(STDIN,$from_data,$ENV{'CONTENT_LENGTH'});
 my @res = split '&', $from_data;
-my %aha = map {split '=', $_} @res;
+my %hash = map {split '=', $_} @res;
+=cut
 
-# $msg .= "Пользователь хочет: " . $aha{what};
-# =head
+=head STDOUT %ENV
 print "<h2>hi</h2>";
-print "<h2>$aha{what}</h2>";
+foreach (keys %hash){
+    print "<p>$_ -> $hash{$_}</p>";
+}
 print "<h2>$ENV{'QUERY_STRING'}</h2>";
 print "</body>";
 print "</html>";
-
+=cut
 # Отправляем письмо
 my $user = 'orlov.avis20@gmail.com';
 my $pass = '1234567890google';
@@ -33,7 +43,10 @@ $smtp->to('orlov.avis@yandex.ru') or die "Error:".$smtp->message();
 $smtp->data() or die "Error:".$smtp->message();
 $smtp->datasend("Content-type: text/html\nSubject: Заявка с сайта жалюзи\nTo: orlov.avis20\@gmail.com\nFrom: orlov.avis\@yandex.ru\n");
 $smtp->datasend("\n");
-$smtp->datasend("A simple test message<br>$aha{what} <br />$aha{name} <br />$aha{phone} ");
+$smtp->datasend('<meta http-equiv="Content-Type" content="text/html; charset=utf-8">');
+$smtp->datasend("<p>Пользователь хочет $cgi->{data}->{what} Почему-то без этого не работает</p>");
+$smtp->datasend("<p>Имя $cgi->{data}->{name}</p> Почему-то без этого не работает");
+$smtp->datasend("<p>Телефон $cgi->{data}->{phone} Почему-то без этого не работает</p>");
 # $smtp->datasend($msg) or die "Error:".$smtp->message();
 $smtp->dataend() or die "Error:".$smtp->message();
 $smtp->quit() or die "Error:".$smtp->message();
