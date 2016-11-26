@@ -175,13 +175,13 @@
                     <h3>Закажите установку жалюзи до 29.06.2016</h3>
                     <p>И получите в подарок москитную сетку для окна</p>
                     <div class="row">
-                        <form action="cgi-bin/send.pl" method="get">
-                        <input type="hidden" name="what" value="Участие в акции">
+                        <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                        <input type="hidden" name="what" class="what" value="Участвовать в акции">
                         <div class="col-md-4">
-                            <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                            <input type="text" name="name" required placeholder="Имя..." class="form-control form_input name">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" id="phone-1" name="phone" required placeholder="Телефон" class="form-control form_input">
+                            <input type="text" id="phone-1" name="phone" required placeholder="Телефон" class="form-control form_input phone">
                         </div>
                         <div class="col-md-4">
                             <button type="submit">Заказать жалюзи</button>
@@ -385,7 +385,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Вызвать замерщика">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -677,19 +678,48 @@
         new WOW().init();
     </script>
     <script type="text/javascript">
-        $(document).ready(
-            function() {
-                $("html").niceScroll({curcorcolor:"#000"});
-            }
-        );
-        /* Вызов модального окна */
-        $(document).on('click', '#call_master_modal', function(e){
-          $("#myModalBox").modal('show');
-        });
-        /* Вызов модального окна */
-        $(document).on('click', '#more_hirizontal', function(e){
-          $("#myModalBox").modal('show');
-        });
+
+      /* Отправка формы */
+      function submitform(e){
+        var url = $('.form').attr('action');
+        var what = $('.form .what').attr('value');
+        var name = $('.form .name').val();
+        var phone = $('.form .phone').val();
+        console.log(e);
+        console.log(url, what, name, phone);
+        /*
+        var xhr = new XMLHttpRequest();
+        var body = 'what=' + encodeURIComponent(what) +
+                   '&name=' + encodeURIComponent(name) +
+                   '&phone=' + encodeURIComponent(phone);
+        xhr.open("GET", url, false);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(body);
+        var result = JSON.parse(xhr.response);
+        if ( result.success == 1 ) {
+          alert("todo");
+        } else {
+            alert(result.errmess);
+        }
+        */
+        return false;
+      };
+
+      $(document).ready(
+          function() {
+              $("html").niceScroll({curcorcolor:"#000"});
+          }
+      );
+      /* Вызов модального окна */
+      $(document).on('click', '#call_master_modal', function(e){
+        $("#myModalBox").modal('show');
+      });
+      /* Вызов модального окна */
+      $(document).on('click', '#more_hirizontal', function(e){
+        $("#myModalBox").modal('show');
+      });
+
+      
     </script>
 </body>
 </html>
