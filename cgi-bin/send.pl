@@ -6,14 +6,6 @@ use My::CGI;
 
 my $cgi = My::CGI->new();
 
-print "Content-type:text/html; charset:utf8\n\n";
-print "<body>";
-print "<html>";
-foreach (keys $cgi->{data}){
-    print "$_ -> $cgi->{data}->{$_} <br />";
-}
-print "</body>";
-print "</html>";
 =head TODO send post data
 # Читаем post данные и делаем из строки хеш
 my $from_data;
@@ -31,7 +23,8 @@ print "<h2>$ENV{'QUERY_STRING'}</h2>";
 print "</body>";
 print "</html>";
 =cut
-# Отправляем письмо
+
+=head Отправляем письмо
 my $user = 'orlov.avis20@gmail.com';
 my $pass = '1234567890google';
 
@@ -44,10 +37,12 @@ $smtp->data() or die "Error:".$smtp->message();
 $smtp->datasend("Content-type: text/html\nSubject: Заявка с сайта жалюзи\nTo: orlov.avis20\@gmail.com\nFrom: orlov.avis\@yandex.ru\n");
 $smtp->datasend("\n");
 $smtp->datasend('<meta http-equiv="Content-Type" content="text/html; charset=utf-8">');
-$smtp->datasend("<p>Пользователь хочет $cgi->{data}->{what} Почему-то без этого не работает</p>");
-$smtp->datasend("<p>Имя $cgi->{data}->{name}</p> Почему-то без этого не работает");
-$smtp->datasend("<p>Телефон $cgi->{data}->{phone} Почему-то без этого не работает</p>");
+$smtp->datasend("<p>Пользователь хочет $cgi->{data}->{what} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>");
+$smtp->datasend("<p>Имя $cgi->{data}->{name}</p> &nbsp;&nbsp;&nbsp;&nbsp;");
+$smtp->datasend("<p>Телефон $cgi->{data}->{phone} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>");
 # $smtp->datasend($msg) or die "Error:".$smtp->message();
 $smtp->dataend() or die "Error:".$smtp->message();
 $smtp->quit() or die "Error:".$smtp->message();
 =cut
+print "Content-Type: application/json; charset:utf8\n\n";
+print '{"success":"1"}';
