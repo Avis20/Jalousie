@@ -437,7 +437,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Горизонтальные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -487,7 +488,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Вертикальные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -537,7 +539,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Рулонные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -587,7 +590,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Жалюзи плиссе">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -618,7 +622,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать жалюзи">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -649,7 +654,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" method="get" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать жалюзи">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -681,12 +687,14 @@
 
       /* Отправка формы */
       function submitform(e){
-        var url = $('.form').attr('action');
-        var what = $('.form .what').attr('value');
-        var name = $('.form .name').val();
-        var phone = $('.form .phone').val();
-        console.log(e);
-        console.log(url, what, name, phone);
+        var url = $(e).attr('action');
+        var what = $(e).children("input.what").val();
+        var name = $(e).find(':input[name=name]').val();
+        var phone = $(e).find(':input[name=phone]').val();
+        // var question = $(e).find(':textarea') ? $(e).find(':textarea[name=question]').val() : "456";
+        // var question = $(e).find(':textarea[name=question]') ? $(e).find(':textarea[name=question]').val() : "";
+        console.log($(e).find(':textarea'));
+        // console.log(url, what, name, phone, question);
         /*
         var xhr = new XMLHttpRequest();
         var body = 'what=' + encodeURIComponent(what) +
