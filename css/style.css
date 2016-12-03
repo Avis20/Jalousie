@@ -17,6 +17,7 @@ button:focus {
 header {
     color: #666;
     margin-top: 10px;
+    height: 110px;
 }
 header .description {
     text-transform: uppercase;
@@ -68,6 +69,10 @@ header .phone_number p {
 
 nav {
     background-color: #fafdfa;
+    top: 110px; /*высота шапки в пикселях*/
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 nav ul.list-inline {
@@ -575,4 +580,11 @@ footer .orlov a {
 }
 .modal-body .price span {
     font-family: 'PFDinTextCondProLight';
+}
+#send_is_good {
+    margin-top: 10%;
+}
+
+#send_is_good .modal-content {
+    border-radius: 10px;
 }

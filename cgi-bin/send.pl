@@ -14,17 +14,15 @@ my @res = split '&', $from_data;
 my %hash = map {split '=', $_} @res;
 =cut
 
-=head STDOUT %ENV
-print "<h2>hi</h2>";
-foreach (keys %hash){
-    print "<p>$_ -> $hash{$_}</p>";
-}
-print "<h2>$ENV{'QUERY_STRING'}</h2>";
-print "</body>";
-print "</html>";
-=cut
 
-=head Отправляем письмо
+=head $cgi-{data}
+print "Content-Type: text/html; charset:utf8\n\n";
+foreach (keys $cgi->{data}){
+    print $_.'->'.$cgi->{data}->{$_} . "<br>";
+}
+=cut 
+
+# =head Отправляем письмо
 my $user = 'orlov.avis20@gmail.com';
 my $pass = '1234567890google';
 
@@ -37,12 +35,13 @@ $smtp->data() or die "Error:".$smtp->message();
 $smtp->datasend("Content-type: text/html\nSubject: Заявка с сайта жалюзи\nTo: orlov.avis20\@gmail.com\nFrom: orlov.avis\@yandex.ru\n");
 $smtp->datasend("\n");
 $smtp->datasend('<meta http-equiv="Content-Type" content="text/html; charset=utf-8">');
-$smtp->datasend("<p>Пользователь хочет $cgi->{data}->{what} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>");
-$smtp->datasend("<p>Имя $cgi->{data}->{name}</p> &nbsp;&nbsp;&nbsp;&nbsp;");
-$smtp->datasend("<p>Телефон $cgi->{data}->{phone} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>");
+$smtp->datasend("<p>Пользователь хочет $cgi->{data}->{what} </p>");
+$smtp->datasend("<p>Имя $cgi->{data}->{name}</p> ");
+$smtp->datasend("<p>Телефон $cgi->{data}->{phone}</p>");
+$smtp->datasend("<p>Вопрос $cgi->{data}->{question} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>") if (defined $cgi->{data}->{question});
 # $smtp->datasend($msg) or die "Error:".$smtp->message();
 $smtp->dataend() or die "Error:".$smtp->message();
 $smtp->quit() or die "Error:".$smtp->message();
-=cut
+# =cut
 print "Content-Type: application/json; charset:utf8\n\n";
 print '{"success":"1"}';

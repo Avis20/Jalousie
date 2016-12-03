@@ -22,6 +22,13 @@ sub _parse_common_data {
     if ($ENV{'QUERY_STRING'}){
         $self = &_parse_QUERY_STRING($self, 'GET');
     }
+    if (uc($ENV{'REQUEST_METHOD'}) eq 'POST'){
+        if (exists $ENV{'CONTENT_TYPE'} && $ENV{'CONTENT_TYPE'} =~ m|^\s*multipart/form-data|i){
+            #TODO parse MultipartData
+        } else {
+            $self = &_parse_QUERY_STRING($self, 'POST');
+        }
+    }
     return $self;
 }
 
@@ -29,7 +36,7 @@ sub _parse_QUERY_STRING {
     my ($self, $type) = @_;
     my $data;
     if ($type && $type eq 'POST'){
-
+        read(STDIN, $data, $ENV{'CONTENT_LENGTH'});
     } else {
         $data = $ENV{'QUERY_STRING'};
     }
