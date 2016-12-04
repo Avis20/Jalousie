@@ -153,7 +153,7 @@ section#types {
     padding-top: 60px;
 }
 section#types .section_header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 section#types .card h4 {
@@ -233,7 +233,8 @@ section#help #free_consult:hover {
 
 /* Наши работы */
 section#portfolio .section_header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 

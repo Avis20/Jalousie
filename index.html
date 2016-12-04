@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/fotorama.css">
     <title>Производство, продажа и установка в Казани</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     
@@ -30,7 +31,7 @@
         </div>
     </header>
 
-    <nav id="top_nav">
+    <nav id="top_nav" class="hidden-xs">
         <div class="container">
             <div class="row">
                 <ul class="list-inline">
@@ -57,17 +58,29 @@
         </div>
     </nav>
 
+    <nav class="visible-xs">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Виды жалюзи</a></li>
+        <li><a href="#">Нашы работы</a></li>
+        <li><a href="#">Акция</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
     <section id="main">
         <div class="container">
-            <div class="row main_header">
+            <div class="row main_header wow fadeInUp">
                 <h1><span>Установим жалюзи в вашей квартире </span><br><span>за 2 часа с полной гарантией </span><br><span>и бесплатной доставкой</span></h1>
             </div>
-            <div class="row">
+            <div class="row wow fadeInLeft" data-wow-delay="0.3s">
                 <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
             </div>
             <div class="row main_buttons">
-                <button data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
-                <a href="#types"><button id="get_type">Выбрать жалюзи</button></a>
+                <button class="wow fadeInLeft" data-wow-delay="0.5s" data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
+                <a href="#types" class="wow fadeInLeft" data-wow-delay="0.6s"><button id="get_type">Выбрать жалюзи</button></a>
             </div>
         </div>
     </section>
@@ -75,13 +88,13 @@
     <section id="types">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Виды жалюзи</h2>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.2s">
                         <img src="img/types-1.jpg" alt="Горизонтальные жалюзи" class="img-responsive center-block">
                         <h4>Горизонтальные жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_hirizontal">Подробнее</button>
@@ -89,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.4s">
                         <img src="img/types-2.jpg" alt="Вертикальные жалюзи" class="img-responsive center-block">
                         <h4>Вертикальные жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_vertical">Подробнее</button>
@@ -97,7 +110,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.6s">
                         <img src="img/types-3.jpg" alt="Рулонновые жалюзи" class="img-responsive center-block">
                         <h4>Рулонновые жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_roll">Подробнее</button>
@@ -105,7 +118,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.8s">
                         <img src="img/types-4.jpg" alt="Жалюзи плиссе" class="img-responsive center-block">
                         <h4>Жалюзи плиссе</h4>
                         <button class="more" data-toggle="modal" href="#more_plisse">Подробнее</button>
@@ -126,7 +139,7 @@
                     <button id="free_consult" data-toggle="modal" href="#get_question">Бесплатная консультация</button>
                 </div>
                 <div class="col-md-2 col-md-offset-1">
-                    <img src="img/help.jpg" alt="Бесплатная консультация" class="img-responsive center-block">
+                    <img src="img/help.jpg" alt="Бесплатная консультация" class="img-responsive center-block wow fadeInRight" data-wow-deply="0.3s">
                 </div>
             </div>
         </div>
@@ -135,7 +148,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Наши работы</h2>
                 </div>
             </div>
@@ -196,7 +209,7 @@
     <section id="feedback">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Отзывы о нашей работе</h2>
                 </div>
             </div>
@@ -782,10 +795,14 @@
               }
           });
       });
+      $("#test").on("click","a", function (event) {
+        console.log("test ok");
+      });
 
       /* Плавный скролл меню */
       $(document).ready(function(){
-        $("#top_nav").on("click","a", function (event) {
+        $("#top_nav, .main_buttons").on("click","a", function (event) {
+          console.log("test");
           //отменяем стандартную обработку нажатия по ссылке
           event.preventDefault();
           //забираем идентификатор бока с атрибута href
