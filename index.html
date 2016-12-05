@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/fotorama.css">
     <title>Производство, продажа и установка в Казани</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     
@@ -30,26 +31,26 @@
         </div>
     </header>
 
-    <nav>
+    <nav id="top_nav" class="hidden-xs">
         <div class="container">
             <div class="row">
                 <ul class="list-inline">
-                    <a href="#">
+                    <a href="#main">
                         <li>Главная</li>
                     </a>
-                    <a href="#">
+                    <a href="#types">
                         <li>Виды жалюзи</li>
                     </a>
-                    <a href="#">
+                    <a href="#portfolio">
                         <li>Нашы работы</li>
                     </a>
-                    <a href="#">
+                    <a href="#offer">
                         <li>Акция</li>
                     </a>
-                    <a href="#">
+                    <a href="#feedback">
                         <li>Отзывы</li>
                     </a>
-                    <a href="#">
+                    <a href="#contacts">
                         <li>Контакты</li>
                     </a>
                 </ul>
@@ -57,17 +58,29 @@
         </div>
     </nav>
 
+    <nav class="visible-xs">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Виды жалюзи</a></li>
+        <li><a href="#">Нашы работы</a></li>
+        <li><a href="#">Акция</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
     <section id="main">
         <div class="container">
-            <div class="row main_header">
+            <div class="row main_header wow fadeInUp">
                 <h1><span>Установим жалюзи в вашей квартире </span><br><span>за 2 часа с полной гарантией </span><br><span>и бесплатной доставкой</span></h1>
             </div>
-            <div class="row">
+            <div class="row wow fadeInLeft" data-wow-delay="0.3s">
                 <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
             </div>
             <div class="row main_buttons">
-                <button data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
-                <a href="#types"><button id="get_type">Выбрать жалюзи</button></a>
+                <button class="wow fadeInLeft" data-wow-delay="0.5s" data-toggle="modal" id="call_master" href="#call_master_modal">Вызвать замерщика</button>
+                <a href="#types" class="wow fadeInLeft" data-wow-delay="0.6s"><button id="get_type">Выбрать жалюзи</button></a>
             </div>
         </div>
     </section>
@@ -75,41 +88,41 @@
     <section id="types">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Виды жалюзи</h2>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.2s">
                         <img src="img/types-1.jpg" alt="Горизонтальные жалюзи" class="img-responsive center-block">
                         <h4>Горизонтальные жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_hirizontal">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
+                        <button class="offer" onclick="get_jaluise(this)" data-toggle="modal" data-what="Заказать Горизонтальные жалюзи">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.4s">
                         <img src="img/types-2.jpg" alt="Вертикальные жалюзи" class="img-responsive center-block">
                         <h4>Вертикальные жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_vertical">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
+                        <button class="offer" onclick="get_jaluise(this)" data-toggle="modal" data-what="Заказать Вертикальные жалюзи">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.6s">
                         <img src="img/types-3.jpg" alt="Рулонновые жалюзи" class="img-responsive center-block">
                         <h4>Рулонновые жалюзи</h4>
                         <button class="more" data-toggle="modal" href="#more_roll">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
+                        <button class="offer" onclick="get_jaluise(this)" data-toggle="modal" data-what="Заказать Рулонновые жалюзи">Заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card wow bounceInUp" data-wow-delay="0.8s">
                         <img src="img/types-4.jpg" alt="Жалюзи плиссе" class="img-responsive center-block">
                         <h4>Жалюзи плиссе</h4>
                         <button class="more" data-toggle="modal" href="#more_plisse">Подробнее</button>
-                        <button class="offer" data-toggle="modal" href="#get_jalousie">Заказать</button>
+                        <button class="offer" onclick="get_jaluise(this)" data-toggle="modal" data-what="Заказать Жалюзи плиссе">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -126,7 +139,7 @@
                     <button id="free_consult" data-toggle="modal" href="#get_question">Бесплатная консультация</button>
                 </div>
                 <div class="col-md-2 col-md-offset-1">
-                    <img src="img/help.jpg" alt="Бесплатная консультация" class="img-responsive center-block">
+                    <img src="img/help.jpg" alt="Бесплатная консультация" class="img-responsive center-block wow fadeInRight" data-wow-deply="0.3s">
                 </div>
             </div>
         </div>
@@ -135,7 +148,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Наши работы</h2>
                 </div>
             </div>
@@ -175,13 +188,13 @@
                     <h3>Закажите установку жалюзи до 29.06.2016</h3>
                     <p>И получите в подарок москитную сетку для окна</p>
                     <div class="row">
-                        <form action="cgi-bin/send.pl" method="post">
-                        <input type="hidden" name="what" value="Участие в акции">
+                        <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                        <input type="hidden" name="what" class="what" value="Участвовать в акции">
                         <div class="col-md-4">
-                            <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
+                            <input type="text" name="name" required placeholder="Имя..." class="form-control form_input name">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" id="phone-1" name="phone" required placeholder="Телефон" class="form-control form_input">
+                            <input type="text" id="phone-1" name="phone" required placeholder="Телефон" class="form-control form_input phone">
                         </div>
                         <div class="col-md-4">
                             <button type="submit">Заказать жалюзи</button>
@@ -196,7 +209,7 @@
     <section id="feedback">
         <div class="container">
             <div class="row">
-                <div class="section_header text-center">
+                <div class="section_header wow fadeInUp text-center">
                     <h2>Отзывы о нашей работе</h2>
                 </div>
             </div>
@@ -385,7 +398,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Вызвать замерщика">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -436,7 +450,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Горизонтальные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -486,7 +501,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Вертикальные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -536,7 +552,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Рулонные жалюзи">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -586,7 +603,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать Жалюзи плиссе">
                 <div class="col-md-4">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -617,7 +635,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform(this)">
+                <input type="hidden" name="what" class="what" value="Заказать жалюзи">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -648,7 +667,8 @@
               </div>
             </div>
             <div class="row">
-              <form action="#">
+              <form action="cgi-bin/send.pl" class="form" onsubmit="return submitform_with_q(this)">
+                <input type="hidden" name="what" class="what" value="Задать вопрос">
                 <div class="col-xs-12">
                   <input type="text" name="name" required placeholder="Имя..." class="form-control form_input">
                 </div>
@@ -668,6 +688,24 @@
       </div>
     </div>
 
+    <!-- Модальное окно об успешной отправке -->
+    <div id="send_is_good" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="row">
+              <div class="header_modal">
+                <h4>Ваша заявка принята</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/fotorama.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -677,15 +715,104 @@
         new WOW().init();
     </script>
     <script type="text/javascript">
-        $(document).ready(
-            function() {
-                $("html").niceScroll({curcorcolor:"#000"});
-            }
-        );
-        /* Вызов модального окна */
-        $(document).on('click', '#call_master_modal', function(e){
-          $("#myModalBox").modal('show');
+
+      /* Отправка форы (без вопроса)*/
+      function submitform(e){
+        var url = $(e).attr('action');
+        var what = $(e).find(':input[name=what]').val();
+        var name = $(e).find(':input[name=name]').val();
+        var phone = $(e).find(':input[name=phone]').val();
+        // console.log(url, what, name, phone);
+        var xhr = new XMLHttpRequest();
+        var body = 'what=' + encodeURIComponent(what) +
+                   '&name=' + encodeURIComponent(name) +
+                   '&phone=' + encodeURIComponent(phone);
+        xhr.open("POST", url, false);
+        xhr.setRequestHeader('Content-Type', 'text/plain');
+        xhr.send(body);
+        var result = JSON.parse(xhr.response);
+        if ( result.success == 1 ) {
+          $(".modal").modal('hide');
+          $("#send_is_good").modal('show');
+        } else {
+            alert(result.errmess);
+        }
+        return false;
+      };
+
+      /* Отправка форы (с вопросом)*/
+      function submitform_with_q(e){
+        var url = $(e).attr('action');
+        var what = $(e).find(':input[name=what]').val();
+        var name = $(e).find(':input[name=name]').val();
+        var phone = $(e).find(':input[name=phone]').val();
+        var question = $(e).find('textarea').val();
+        var xhr = new XMLHttpRequest();
+        var body = 'what=' + encodeURIComponent(what) +
+                   '&name=' + encodeURIComponent(name) +
+                   '&phone=' + encodeURIComponent(phone) + 
+                   '&question=' + encodeURIComponent(question);
+        xhr.open("POST", url, false);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(body);
+        var result = JSON.parse(xhr.response);
+        if ( result.success == 1 ) {
+          $(".modal").modal('hide');
+          $("#send_is_good").modal('show');
+        } else {
+            alert(result.errmess);
+        }
+        return false;
+      };
+      function get_jaluise(e){
+        var text = $(e).attr('data-what');
+        $("#get_jalousie .form .what").val(text);
+        $("#get_jalousie").modal('show');
+      }
+
+      $(document).ready(
+          function() {
+              $("html").niceScroll({curcorcolor:"#000"});
+          }
+      );
+
+      /* Фиксация шабки (?) */
+      var h_hght = 110; // высота шапки
+      var h_mrg = 0;    // отступ когда шапка уже не видна
+                       
+      $(function(){
+          var elem = $('#top_nav');
+          var top = $(this).scrollTop();
+          if(top > h_hght){
+              elem.css('top', h_mrg);
+          }           
+          $(window).scroll(function(){
+              top = $(this).scrollTop();
+              if (top+h_mrg < h_hght) {
+                  elem.css('top', (h_hght-top));
+              } else {
+                  elem.css('top', h_mrg);
+              }
+          });
+      });
+      $("#test").on("click","a", function (event) {
+        console.log("test ok");
+      });
+
+      /* Плавный скролл меню */
+      $(document).ready(function(){
+        $("#top_nav, .main_buttons").on("click","a", function (event) {
+          console.log("test");
+          //отменяем стандартную обработку нажатия по ссылке
+          event.preventDefault();
+          //забираем идентификатор бока с атрибута href
+          var id = $(this).attr('href'),
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+          //анимируем переход на расстояние - top за 1500 мс
+          $('body,html').animate({scrollTop: top}, 1000);
         });
+      });
     </script>
 </body>
 </html>

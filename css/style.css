@@ -17,6 +17,7 @@ button:focus {
 header {
     color: #666;
     margin-top: 10px;
+    height: 110px;
 }
 header .description {
     text-transform: uppercase;
@@ -68,6 +69,10 @@ header .phone_number p {
 
 nav {
     background-color: #fafdfa;
+    top: 110px; /*высота шапки в пикселях*/
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 nav ul.list-inline {
@@ -148,7 +153,7 @@ section#types {
     padding-top: 60px;
 }
 section#types .section_header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 section#types .card h4 {
@@ -228,7 +233,8 @@ section#help #free_consult:hover {
 
 /* Наши работы */
 section#portfolio .section_header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 
@@ -575,4 +581,11 @@ footer .orlov a {
 }
 .modal-body .price span {
     font-family: 'PFDinTextCondProLight';
+}
+#send_is_good {
+    margin-top: 10%;
+}
+
+#send_is_good .modal-content {
+    border-radius: 10px;
 }
