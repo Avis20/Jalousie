@@ -1,6 +1,6 @@
 # Jalousie
-URL - https://avis20.github.io/Jalousie/
-Container - http://jalousie-orlovavis367617.codeanyapp.com/
+URL - https://avis20.github.io/Jalousie/<br>
+Container - http://jalousie-orlovavis367617.codeanyapp.com/<br>
 Server start - browser-sync start --server --files "*.*, css/*.*, js/*.*"
 
 # Apache settings
