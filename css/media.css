@@ -1,0 +1,97 @@
+
+.dropdown-toggle {
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin: 20px;
+    position: relative;
+    top: 10px;
+    background-color: #fff;
+    color: #666;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    position: relative;
+    top: 17px;
+    width: 100%;
+}
+
+.dropdown-toggle:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+@media(min-width:0px) and (max-width:320px){
+    nav {
+        top: 0;
+        height: 80px;
+        padding-top: 20px;
+    }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    section#main .main_buttons button {
+        margin: 0 auto;
+        display: block;
+    }
+    section#main .main_buttons #call_master {
+        padding: 5px 15px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    section#main .main_buttons a #get_type {
+        margin: 0 auto;
+        padding: 15px 42px;
+        font-size: 14px;
+    }
+
+    section#types .card .offer {
+        margin: 0 auto;
+        padding: 10px 30px;
+        margin: 10px 0;
+    }
+}
+@media(min-width:321px) and (max-width:480px){
+    nav {
+        top: 0;
+        height: 80px;
+        padding-top: 20px;
+    }
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .main_buttons {
+        margin: 0 auto;
+        display: block;
+    }
+    #call_master {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+@media(min-width:481px) and (max-width:768px){
+    body {
+        background-color: green;
+    }
+}
+@media(min-width:769px) and (max-width:992px){
+    body {
+        background-color: yellow;
+    }
+}
+@media(min-width:993px) and (max-width:1200px){
+    body {
+        background-color: black;
+    }
+}
